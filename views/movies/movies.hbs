@@ -1,0 +1,15 @@
+<a href="/movies/new">Create a movie</a>
+
+<h1>Movies list</h1>
+<hr>
+<div>
+    {{#each movies}}
+    <p>Title : {{this.title}}</p>
+    <p>Genre : {{this.genre}}</p>
+    <p>Plot : {{this.catchPhrase}}</p>
+    <a href="/celebrities/{{this._id}}">More info</a>
+    <a href="/celebrities/{{this._id}}/edit">Update</a>
+    <a href="/celebrities/{{this._id}}/delete">Delete</a>
+    <hr>
+    {{/each}}
+</div>
